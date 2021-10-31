@@ -1,0 +1,25 @@
+{
+  int add(int a, int b) {
+    return a + b;
+  }
+
+  print(add(3, 4));
+
+  int f() {
+    return 5; // return does not immediately end function execution
+    return 8; // function returns it's last "returned" value
+  }
+
+  print(f());
+
+  int x;
+  x = 5;
+
+  int f() {
+    int x; // this is a local variable, the global x is shadowed
+    x = 10;
+  }
+
+  print(f()); // function without return statement returns default value for its type
+  print(x); // global x should still be 5
+}

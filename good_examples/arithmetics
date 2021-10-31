@@ -1,0 +1,16 @@
+{
+  int a;
+  a = 2;
+  print(2 * a + (5 - a) / -3);
+
+  int m;
+  m = a % 2;
+  print(m);
+
+  bool a; // from now on, "a" is a bool variable
+  bool b;
+
+  print(a || b);
+  print(!a && true);
+}
+

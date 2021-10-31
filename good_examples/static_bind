@@ -1,0 +1,13 @@
+{
+  int x;
+  x = 5;
+
+  void f() {
+    print(x);
+  }
+
+  int x; // previous x is shadowed from now
+  x = 7;
+
+  f(); // but f function remembers the previous x
+}

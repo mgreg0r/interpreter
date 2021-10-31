@@ -1,0 +1,19 @@
+{
+  // a is passed by value, b is passed by reference
+  void f(int a, ref int b) {
+    a = 10;
+    b = 10;
+  }
+
+  int x;
+  int y;
+  x = 5;
+  y = 5;
+  f(x, y);
+
+  print(x);
+  print(y);
+
+
+  f(5, 5); // nothing should happen, we don't need to make use of ref argument
+}

@@ -1,0 +1,18 @@
+{
+  int n;
+  string s;
+  bool b;
+
+  // Variables are initialized with default values
+  print(n);
+  print(s);
+  print(b);
+
+  n = 5;
+  s = "abc";
+  b = true;
+
+  print(n);
+  print(s);
+  print(b);
+}
